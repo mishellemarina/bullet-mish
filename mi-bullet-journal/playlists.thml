@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Playlist</title>
+</head>
+<body>
+  <h1>Playlist</h1>
+  
+  <form id="playlistForm">
+    <input type="text" id="cancion" placeholder="Canción" required>
+    <input type="text" id="artista" placeholder="Artista" required>
+    <button type="submit">Añadir</button>
+  </form>
+  
+  <ul id="playlist"></ul>
+  
+  <script src="js/script.js"></script>
+  <script>
+    setupPage('playlist', 'playlistForm', 'playlist', ['cancion', 'artista']);
+  </script>
+</body>
+</html>
