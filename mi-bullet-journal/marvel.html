@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Marvel</title>
+</head>
+<body>
+  <h1>Marvel</h1>
+
+  <form id="marvelForm">
+    <input type="text" id="titulo" placeholder="Nombre de la peli" required>
+    <input type="text" id="fase" placeholder="Fase (1,2,3...)" required>
+    <input type="checkbox" id="vista"> Vista
+    <input type="number" id="valoracion" placeholder="Valoración (0-10)" min="0" max="10">
+    <input type="text" id="imagen" placeholder="URL de imagen (opcional)">
+    <button type="submit">Añadir</button>
+  </form>
+
+  <ul id="marvelList"></ul>
+
+  <script src="js/script.js"></script>
+  <script>
+    setupPage('marvel', 'marvelForm', 'marvelList', ['titulo', 'fase', 'vista', 'valoracion', 'imagen']);
+  </script>
+</body>
+</html>
