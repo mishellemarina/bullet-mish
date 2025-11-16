@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Octubre</title>
+</head>
+<body>
+  <h1>Octubre</h1>
+
+  <form id="octubreForm">
+    <input type="date" id="fecha" required>
+    <input type="text" id="mood" placeholder="Mood del día">
+    <input type="number" id="agua" placeholder="Agua (ml)">
+    <label><input type="checkbox" id="skincare_dia"> Skincare diurno</label>
+    <label><input type="checkbox" id="skincare_noche"> Skincare nocturno</label>
+    <input type="number" id="horas_sueno" placeholder="Horas de sueño">
+    <input type="text" id="lectura" placeholder="Lectura diaria">
+    <input type="text" id="alimentacion" placeholder="Alimentación">
+    <button type="submit">Añadir registro</button>
+  </form>
+
+  <ul id="octubreList"></ul>
+
+  <script src="../js/script.js"></script>
+  <script>
+    setupPage('octubre', 'octubreForm', 'octubreList', [
+      'fecha', 'mood', 'agua', 'skincare_dia', 'skincare_noche',
+      'horas_sueno', 'lectura', 'alimentacion'
+    ]);
+  </script>
+</body>
+</html>
