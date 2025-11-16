@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Gratitud</title>
+</head>
+<body>
+  <h1>Gratitud</h1>
+
+  <form id="gratitudForm">
+    <textarea id="texto" placeholder="Escribe por qué estás agradecida..." required></textarea>
+    <button type="submit">Añadir</button>
+  </form>
+
+  <ul id="gratitudList"></ul>
+
+  <script src="js/script.js"></script>
+  <script>
+    setupPage('gratitud', 'gratitudForm', 'gratitudList', ['texto']);
+  </script>
+</body>
+</html>
