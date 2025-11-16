@@ -1,159 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bullet Journal de Mish</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-  <style>
-    body { padding: 20px; }
-    main.container { margin-top: 2rem; margin-bottom: 4rem; }
-    .section-card {
-      padding: 1.5rem;
-      border-radius: 10px;
-      background: #fafafa;
-      margin-bottom: 2rem;
-    }
-    img { border-radius: 8px; }
-    .grid { gap: 2rem; }
-    .monthly-section {
-      padding: 1.5rem;
-      border: 1px solid #eee;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-    }
-    .habits-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 1rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Mi Bullet Journal</title>
 </head>
-
 <body>
+  <header>
+    <h1>Mi Bullet Journal</h1>
+  </header>
 
-<nav class="container-fluid">
-  <ul>
-    <li><strong>Bullet Journal de Mish</strong></li>
-  </ul>
-  <ul>
-    <li><a href="#playlist">Playlist</a></li>
-    <li><a href="#gratitud">Gratitud</a></li>
-    <li><a href="#cine">Cine</a></li>
-    <li><a href="#" role="button">Inicio</a></li>
-  </ul>
-</nav>
-
-<main class="container">
-  <div class="grid">
-
-    <!-- INTRO -->
-    <section class="section-card">
-      <hgroup>
-        <h2>Mi Bullet Journal Digital</h2>
-        <h3>Organización • Creatividad • Bienestar</h3>
-      </hgroup>
-
-      <p>
-        Aquí puedes organizar todo tu año: playlists, gratitud, cine, series, manwhas, libros,
-        ahorros, Marvel, hábitos y mood mensual.
-      </p>
-
-      <figure>
-        <img src="https://source.unsplash.com/featured/?journal,desk" alt="Bullet Journal">
-        <figcaption><a href="https://unsplash.com" target="_blank">Imágenes Unsplash</a></figcaption>
-      </figure>
-
-      <!-- PLAYLIST -->
-      <h3 id="playlist">🎵 Playlist anual</h3>
-      <p>Lista de canciones que te acompañan este año.</p>
-
-      <!-- GRATITUD -->
-      <h3 id="gratitud">💛 Gratitud</h3>
-      <p>Registra cosas por las que estás agradecida cada día.</p>
-
-      <!-- WISHLIST -->
-      <h3 id="wishlist">🎁 Wishlist</h3>
-      <p>Tus caprichos, ideas y cosas que quieres conseguir.</p>
-
-      <!-- CINE -->
-      <h3 id="cine">🎬 Cine</h3>
-      <p>Películas vistas en el cine + tu valoración.</p>
-
-      <!-- SERIES -->
-      <h3 id="series">📺 Series</h3>
-      <p>Añade foto, puntuación y temporadas vistas.</p>
-
-      <!-- PROGRAMAS -->
-      <h3 id="programas">📼 Programas</h3>
-      <p>Reality shows, programas y entretenimiento con puntuación.</p>
-
-      <!-- MANWHAS -->
-      <h3 id="manwhas">📚 Manwhas</h3>
-      <p>Imágenes, capítulos leídos y valoración.</p>
-
-      <!-- LIBROS -->
-      <h3 id="libros">📖 Libros</h3>
-      <p>Autores, progreso y valoración final.</p>
-
-      <!-- AHORROS -->
-      <h3 id="ahorros">💰 Ahorros</h3>
-      <p>Control de ingresos, gastos y ahorros totales.</p>
-
-      <!-- MARVEL -->
-      <h3 id="marvel">🦸 Marvel por fases</h3>
-      <p>Marca qué pelis viste, ponles nota y muestra la imagen.</p>
-      <img src="https://source.unsplash.com/featured/?marvel" alt="Marvel" />
-
-      <!-- MESES -->
-      <h3 id="meses">📅 Seguimiento mensual</h3>
-      <p>Tu mood diario, hábitos y progreso de cada mes.</p>
-
-      <!-- EJEMPLO DE SECCIÓN MENSUAL -->
-      <div class="monthly-section">
-        <h4>Enero</h4>
-        <p>Registra tu estado de ánimo cada día.</p>
-
-        <h5>Hábitos</h5>
-        <div class="habits-grid">
-          <label><input type="checkbox"> Agua</label>
-          <label><input type="checkbox"> Skincare día</label>
-          <label><input type="checkbox"> Skincare noche</label>
-          <label><input type="checkbox"> Dormir 8h</label>
-          <label><input type="checkbox"> Leer</label>
-          <label><input type="checkbox"> Comer bien</label>
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-</main>
-
-<section aria-label="Subscribe example">
-  <div class="container">
-    <article>
-      <hgroup>
-        <h2>Notas rápidas</h2>
-        <h3>Guarda ideas, pensamientos o tareas</h3>
-      </hgroup>
-
-      <form class="grid">
-        <input type="text" id="firstname" name="firstname" placeholder="Título" aria-label="Título" required />
-        <input type="email" id="email" name="email" placeholder="Descripción" aria-label="Descripción" required />
-        <button type="submit" onclick="event.preventDefault()">Guardar</button>
-      </form>
-
-    </article>
-  </div>
-</section>
-
-<footer class="container">
-  <small>
-    <a href="#">© Mish</a> • 
-    <a href="#">Contacto</a>
-  </small>
-</footer>
-
+  <nav>
+    <ul>
+      <li><a href="playlists.html">Playlist</a></li>
+      <li><a href="gratitud.html">Gratitud</a></li>
+      <li><a href="wishlist.html">Wishlist</a></li>
+      <li><a href="cine.html">Cine</a></li>
+      <li><a href="programas.html">Programas</a></li>
+      <li><a href="series.html">Series</a></li>
+      <li><a href="manwhas.html">Manwhas</a></li>
+      <li><a href="libros.html">Libros</a></li>
+      <li><a href="ahorros.html">Ahorros</a></li>
+      <li><a href="marvel.html">Marvel</a></li>
+      <li><a href="meses/enero.html">Enero</a></li>
+      <li><a href="meses/febrero.html">Febrero</a></li>
+      <li><a href="meses/marzo.html">Febrero</a></li>
+      <li><a href="meses/abril.html">Febrero</a></li>
+      <li><a href="meses/mayo.html">Febrero</a></li>
+      <li><a href="meses/junio.html">Febrero</a></li>
+      <li><a href="meses/julio.html">Febrero</a></li>
+      <li><a href="meses/agosto.html">Febrero</a></li>
+      <li><a href="meses/septiembre.html">Febrero</a></li>
+      <li><a href="meses/octubre.html">Febrero</a></li>
+      <li><a href="meses/noviembre.html">Febrero</a></li>
+      <li><a href="meses/diciembre.html">Febrero</a></li>
+    </ul>
+  </nav>
 </body>
 </html>
