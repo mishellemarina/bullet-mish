@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Cine</title>
+</head>
+<body>
+  <h1>Cine</h1>
+
+  <form id="cineForm">
+    <input type="text" id="titulo" placeholder="Título de la peli" required>
+    <input type="number" id="valoracion" placeholder="Valoración (0-10)" min="0" max="10">
+    <button type="submit">Añadir</button>
+  </form>
+
+  <ul id="cineList"></ul>
+
+  <script src="js/script.js"></script>
+  <script>
+    setupPage('cine', 'cineForm', 'cineList', ['titulo', 'valoracion']);
+  </script>
+</body>
+</html>
