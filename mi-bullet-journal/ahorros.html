@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Ahorros</title>
+</head>
+<body>
+  <h1>Ahorros</h1>
+
+  <form id="ahorrosForm">
+    <input type="number" id="ingreso" placeholder="Ingreso (€)" required>
+    <input type="number" id="gasto" placeholder="Gasto (€)" required>
+    <button type="submit">Añadir</button>
+  </form>
+
+  <ul id="ahorrosList"></ul>
+
+  <script src="js/script.js"></script>
+  <script>
+    setupPage('ahorros', 'ahorrosForm', 'ahorrosList', ['ingreso', 'gasto']);
+  </script>
+</body>
+</html>
