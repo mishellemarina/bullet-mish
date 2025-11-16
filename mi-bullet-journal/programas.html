@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Programas</title>
+</head>
+<body>
+  <h1>Programas</h1>
+
+  <form id="programasForm">
+    <input type="text" id="titulo" placeholder="Nombre del programa" required>
+    <input type="number" id="valoracion" placeholder="Valoración (0-10)" min="0" max="10">
+    <button type="submit">Añadir</button>
+  </form>
+
+  <ul id="programasList"></ul>
+
+  <script src="js/script.js"></script>
+  <script>
+    setupPage('programas', 'programasForm', 'programasList', ['titulo', 'valoracion']);
+  </script>
+</body>
+</html>
