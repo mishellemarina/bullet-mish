@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Manwhas</title>
+</head>
+<body>
+  <h1>Manwhas</h1>
+
+  <form id="manwhasForm">
+    <input type="text" id="titulo" placeholder="Título del manwha" required>
+    <input type="text" id="imagen" placeholder="URL de imagen (opcional)">
+    <input type="number" id="valoracion" placeholder="Valoración (0-10)" min="0" max="10">
+    <button type="submit">Añadir</button>
+  </form>
+
+  <ul id="manwhasList"></ul>
+
+  <script src="js/script.js"></script>
+  <script>
+    setupPage('manwhas', 'manwhasForm', 'manwhasList', ['titulo', 'imagen', 'valoracion']);
+  </script>
+</body>
+</html>
